@@ -1,8 +1,10 @@
 import "./App.css";
-import Title from "./Title.jsx"; //importing a component which is defined in a separate file
+//import Title from "./Title.jsx"; //importing a component which is defined in a separate file
 import Product from "./ProductTab.jsx";
 import ProductTab from "./ProductTab.jsx";
-import MessageBox from "./MessageBox.jsx";
+import Button from "./Button.jsx";
+import Form from "./Form.jsx";
+//import MessageBox from "./MessageBox.jsx";
 // function Title() {
 //   return <h1>I am the title</h1>;
 // }
@@ -30,9 +32,10 @@ function App() {
   // );
   return (
     <div>
-      <ProductTab/>
-      {/* <MessageBox userName = "Kanishk" textColor = "green"/>
-      <MessageBox userName = "Kanishk" textColor = "blue"/> */}
+      {/* <h2>Blockbuster deals | Shop now</h2> */}
+      {/* <ProductTab/> */}
+      {/* <Button/> */}
+      <Form/>
     </div>
   )
 }

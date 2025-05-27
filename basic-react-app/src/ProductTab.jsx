@@ -1,13 +1,21 @@
 import Product from "./Product.jsx";
 function ProductTab() {
   //let options = ["hi-tech", "waterproof", "portable"];
-  let options = [<li>hi-tech</li>, <li>waterproof</li>, <li>portable</li>]
-  let options2 = {a: "high-tech", b:"fast"};
+  // let options = [<li>hi-tech</li>, <li>waterproof</li>, <li>portable</li>]
+  // let options2 = {a: "high-tech", b:"fast"};
+  let styles = {
+    display : "flex",
+    flexWrap : 'wrap',
+    justifyContent : "center",
+    alignItems : "center"
+  };
   return (
-    <div>
-      <Product title = "This is a phone" features = {options} features2 = {options2}/>
-      <Product title = "This is a laptop" features = {options} features2 = {options2}/>
-      <Product title = "This is a fridge"features = {options} features2 = {options2}/>
+    <div style = {styles}>
+      
+      <Product title = "Logitech MX master" idx = {0}/>
+      <Product title = "Apple pencil Gen2" idx = {1}/>
+      <Product title = "Zebronics zeb transfer" idx = {2}/>
+      <Product title = "Logitech K380" idx = {3}/>
     </div>
   );
 }

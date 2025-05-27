@@ -1,22 +1,16 @@
 import "./Product.css";
+import Price from "./Price.jsx";
 
-function Product({ title, price, features, features2 }) {
-  console.log(features);
-  const list = features.map((feature) => <li>{feature}</li>); //Map method used with variable
-  let styles = {backgroundColor : "blue"}; //CSS attribute is written in camel case
+function Product({title, idx}) {
+  let oldPrices = ["12,495", "11,900", "1599", "599"];
+  let newPrices = ["8,999" , "9,199", "899", "278"];
+  let description = [["8,000 DPI", "5 Programmable interfaces"], ["Intuitive surace", "Designed for iPad"], ["Designed for iPad", "Intuitive surace"],["Wireless", "5 Programmable interfaces"] ]
   return (
-    <div className="Product" style={styles}>
-      <h3>{title}</h3>
-      <p>This is my product description</p>
-      <p>{features}</p>
-      <p>{features2.a}</p>
-      <p>{features2.b}</p>
-      {/* <p>
-        {features.map((feature) => ( //Map method used directly
-          <li>{feature}</li>
-        ))}
-      </p> */}
-      {/* <p>{price > 30000 ? "Discount of 5%" : "No discount"}</p>  */} 
+    <div className="Product" >
+      <h4>{title}</h4>
+      <p>{description[idx][0]}</p>
+      <p>{description[idx][1]}</p>
+      <Price oldPrice = {oldPrices[idx]} newPrice = {newPrices[idx]}/>
     </div>
   );
 }
