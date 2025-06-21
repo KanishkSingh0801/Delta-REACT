@@ -4,11 +4,16 @@ import LudoBoard from "./LudoBoard";
 import TicketNum from "./TicketNum";
 import TodoList from "./TodoList";
 import Ticket from "./Ticket";
+import {sum} from "./Helper";
 
 function App() {
+
+  let winCondition = (ticket) => {
+    return ticket.every((num) => num === ticket[0]);
+  }
   return (
     <>
-      <Lottery n={3} winningSum = {15}></Lottery>
+      <Lottery n={3} winCondition = {winCondition}></Lottery>
     </>
   );
 }
