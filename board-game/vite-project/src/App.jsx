@@ -5,6 +5,7 @@ import TicketNum from "./TicketNum";
 import TodoList from "./TodoList";
 import Ticket from "./Ticket";
 import {sum} from "./Helper";
+import Forms from "./Forms";
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
   }
   return (
     <>
-      <Lottery n={3} winCondition = {winCondition}></Lottery>
+      {/* <Lottery n={3} winCondition = {winCondition}></Lottery> */}
+      <Forms/>
     </>
   );
 }
