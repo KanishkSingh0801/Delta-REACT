@@ -8,6 +8,8 @@ import {sum} from "./Helper";
 import Forms from "./Forms";
 import CommentsForm from "./CommentsFrom";
 import Comments from "./Comment";
+import Counter from "./Counter";
+import Joker from "./Joker";
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
     <>
       {/* <Lottery n={3} winCondition = {winCondition}></Lottery> */}
       {/* <Forms/> */}
-      <Comments/>
+      {/* <Comments/> */}
+      {/* <Counter/> */}
+      <Joker/>
     </>
   );
 }
